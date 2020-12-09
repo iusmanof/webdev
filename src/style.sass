@@ -1,7 +1,7 @@
 @import './reset'
 $del: 1px solid red
 
-$base-width: 1600px
+$base-width: 1556px
 
 // .block
 //     display: inline     // position
@@ -15,7 +15,7 @@ $base-width: 1600px
 
 .header 
     margin: 0 auto
-    max-width: 1600px
+    max-width: 100rem
     background-image: url('./assets/bg-image.png')
     background-repeat: no-repeat
 
@@ -100,4 +100,59 @@ $base-width: 1600px
 
 .button-get-started:hover
     background: #009CCC
+
+.rappresent
+    margin: 0 auto
+    max-width: 100rem
+    border: $del
+ 
+
+    &__wrapper
+        display: flex   
+        flex-direction: row
+        align-items: center
+        justify-content: space-evenly
+        min-height: 52.5rem
+        
+       
+
+    &__column  
+        max-width: 25.5rem 
+        height: 38rem
+
+    &__title
+        max-width: 24rem
+        padding-top: 180px
+        font-family: Roboto
+        font-weight: 700
+        font-size: 1.6rem
+        text-transform: uppercase
+
+        line-height: 113%
+        
+
+    &__text
+        padding-top: 19px
+        font-family: Roboto
+        font-weight: 200
+        font-size: 0.9rem
+        word-spacing: 0.1px
+        line-height: 138%
+
+    &__button
+        margin-top: 27px    
+        
+    &__column-img
+        padding-top: 8px
+        
+    
+        
+        // !!!!!!!
+        //
+        //
+        // npm run watch -> go live in vscode
+        //
+        //
+        // !!!!!!!!
+           
 

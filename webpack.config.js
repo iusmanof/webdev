@@ -19,7 +19,8 @@ module.exports = {
     devtool: 'inline-source-map', // readable src code in dist/
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        port: 4200,
+        port:5001,
+        watchContentBase: true,
         open: true
     },
     module: {
