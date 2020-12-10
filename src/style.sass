@@ -1,7 +1,7 @@
 @import './reset'
 $del: 1px solid red
 
-$base-width: 1556px
+$base-width: 1600px
 
 // .block
 //     display: inline     // position
@@ -12,6 +12,7 @@ $base-width: 1556px
 .container
     margin: 0 auto
     max-width: $base-width
+    font-family: Roboto // move to another , later
 
 .header 
     margin: 0 auto
@@ -103,19 +104,16 @@ $base-width: 1556px
 
 .rappresent
     margin: 0 auto
-    max-width: 100rem
-    border: $del
- 
+    max-width: 1556px
 
     &__wrapper
         display: flex   
         flex-direction: row
         align-items: center
         justify-content: space-evenly
+        flex-wrap: wrap
         min-height: 52.5rem
         
-       
-
     &__column  
         max-width: 25.5rem 
         height: 38rem
@@ -127,10 +125,8 @@ $base-width: 1556px
         font-weight: 700
         font-size: 1.6rem
         text-transform: uppercase
-
         line-height: 113%
         
-
     &__text
         padding-top: 19px
         font-family: Roboto
@@ -144,10 +140,89 @@ $base-width: 1556px
         
     &__column-img
         padding-top: 8px
+
+.community
+    min-height: 504px
+    background: #F5F6F7
+
+    &__wrapper
+        display: flex  
+        justify-content: flex-end
+        flex-wrap: wrap
+        overflow-x: hidden
+        padding-top: 87px
+       
+
         
-    
+    &__info
+        max-width: 300px
+        margin-right: 107px
+        text-align: center
+
+    &__sliders
+        margin-right: -387px  
+
+    &__logo
+        padding-top: 73px
+
+    &__title
+        padding-top: 18px
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 2.4px
+        text-transform: uppercase
+        color: #373737
+
+    &__text
+        padding-top: 12px
+        font-weight: 300
+        font-size: 14px
+        line-height: 140%
+        letter-spacing: 0.1px
+
+    &__slider-navigation
+        display: flex
+        justify-content: space-evenly
+        width: 100px
+        padding-bottom: 22px
+        padding-left: 565px
         
-        // !!!!!!!
+    &__slider-items
+        display: flex
+
+
+    &__slider-slide
+        display: flex
+        justify-content: space-between
+    &__slider-slide
+        padding-left: 30px
+
+.prev-arrow,
+.next-arrow 
+    cursor: pointer
+
+.prev-arrow:hover,
+.next-arrow:hover 
+    transform: scale(1.2)
+
+.implement
+    min-height: 845px
+
+    &__wrapper
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-evenly
+        flex-wrap: wrap
+        min-height: 830px
+        max-width: 1319px
+        margin: 0 auto
+        border: $del
+    &__column
+        max-width: 360px    
+        border: $del
         //
         //
         // npm run watch -> go live in vscode
