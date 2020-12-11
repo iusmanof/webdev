@@ -2,18 +2,15 @@
 $del: 1px solid red
 
 $base-width: 1600px
-
-// .block
-//     display: inline     // position
-//     margin: 0 auto      // alignment and padding
-//     font-family: Roboto // formatting     
+   
+body
+    font-family: Roboto, sans-serif
 
 
 .container
     margin: 0 auto
     max-width: $base-width
-    font-family: Roboto // move to another , later
-
+    
 .header 
     margin: 0 auto
     max-width: 100rem
@@ -23,7 +20,7 @@ $base-width: 1600px
     background-position: center
 
     &__menu
-        padding-top: 17px
+        padding-top: 25px
 
     &__menu-list  
         display: flex
@@ -40,7 +37,6 @@ $base-width: 1600px
     &__menu-link
         text-decoration: none
         color: white
-        font-family: Roboto
         font-size: 14px
 
     &__menu-link:hover
@@ -55,8 +51,6 @@ $base-width: 1600px
         align-items: center
         justify-content: space-between
         padding-top:  8.7rem
-   
-        font-family: Roboto, sans-serif
         color: rgba(255, 255, 255, 0.8)
 
     &__content-title
@@ -127,7 +121,6 @@ $base-width: 1600px
     &__title
         max-width: 24rem
         padding-top: 180px
-        font-family: Roboto
         font-weight: 700
         font-size: 1.6rem
         text-transform: uppercase
@@ -135,7 +128,6 @@ $base-width: 1600px
         
     &__text
         padding-top: 19px
-        font-family: Roboto
         font-weight: 200
         font-size: 0.9rem
         word-spacing: 0.1px
@@ -254,18 +246,51 @@ $base-width: 1600px
 .sign
     margin: 0 auto
     max-width: 1600px
+    min-height: 523px
     background-image: url('assets/signup-image.jpg')
     background-image: no-repeat
+    background-size: cover
+    // background-position: center
 
     &__wrapper    
         display: flex
         align-items: center
-        justify-content: center
-        min-height: 523px
+        justify-content: space-between
+        flex-direction: column
+        padding-top: 201px
+        min-height: 104px
+
+    &__title
+       color: white
+       font-size: 24px
+       font-weight: 700
+       letter-spacing: 1px
+       text-transform: uppercase
+
+
+    &__form-container
+ 
+
+    &__email
+        min-width: 299px    
+        border: none
+        padding: 13px 23px
+
+    &__submit
+        background-image: url('assets/fa-check.png')
+        background-repeat: no-repeat
+        background-position: 24px 14px
+        margin-left: -8px
+        min-width: 65px
+        min-height: 46px
+        border: none
+        background-color: #00AFCB
+        cursor: pointer
+        transition: all .3s   
+
+    &__submit:hover 
+        // background: #009CC2
     
-    &title
-       
-        //
         //
         // npm run watch -> go live in vscode
         //
