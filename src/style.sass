@@ -19,9 +19,11 @@ $base-width: 1600px
     max-width: 100rem
     background-image: url('./assets/bg-image.png')
     background-repeat: no-repeat
+    background-size: cover
+    background-position: center
 
     &__menu
-        padding-top: 1.45rem
+        padding-top: 17px
 
     &__menu-list  
         display: flex
@@ -53,34 +55,38 @@ $base-width: 1600px
         align-items: center
         justify-content: space-between
         padding-top:  8.7rem
+   
         font-family: Roboto, sans-serif
         color: rgba(255, 255, 255, 0.8)
 
     &__content-title
-        padding-top: 1.6rem
+        padding-top: 26px
+        padding-left: 5px
         text-transform: uppercase
         text-align: center
         font-size: 4rem
         font-weight: 700
-        letter-spacing: 0.289rem
+        letter-spacing: 4px
+        word-spacing: 3px
         
     &__content-text
-        padding-top: 1.5rem
-        font-size: 1.13rem
-        line-height: 140%
-        letter-spacing: 0.1px
-        word-spacing: 0.1px
+        padding-top: 26px
+        padding-left: 3px
+        font-size: 16px
+        line-height: 155%
+        letter-spacing: 1px
         text-align: center
         width: 30rem
 
     &__content-button
-        margin-top: 2rem
+        margin-top: 30px
+        margin-left: 1px
 
     &__social-buttons
         display: flex
         justify-content: space-between
         width: 170px
-        padding-top: 183px
+        padding-top: 181px
         padding-bottom: 88px
     &__social-img:hover
         transform: scale(1.2)
@@ -90,13 +96,13 @@ $base-width: 1600px
         background: #00AFDB
         width: 5.75rem
         height: 1.12rem
-        padding: 0.9375rem 2.9375rem
+        padding: 14px 46px
         text-transform: uppercase
         color: #FFFFFF
         font-style: normal
         font-weight: bold
         font-size: 14px
-        line-height: 16px
+        line-height: 21px
         transition: all .5s
 
 .button-get-started:hover
@@ -104,7 +110,7 @@ $base-width: 1600px
 
 .rappresent
     margin: 0 auto
-    max-width: 1556px
+    max-width: 1560px
 
     &__wrapper
         display: flex   
@@ -115,8 +121,8 @@ $base-width: 1600px
         min-height: 52.5rem
         
     &__column  
-        max-width: 25.5rem 
-        height: 38rem
+        max-width: 405px
+        height: 600px
 
     &__title
         max-width: 24rem
@@ -136,7 +142,7 @@ $base-width: 1600px
         line-height: 138%
 
     &__button
-        margin-top: 27px    
+        margin-top: 30px    
         
     &__column-img
         padding-top: 8px
@@ -152,8 +158,6 @@ $base-width: 1600px
         overflow-x: hidden
         padding-top: 87px
        
-
-        
     &__info
         max-width: 300px
         margin-right: 107px
@@ -163,10 +167,10 @@ $base-width: 1600px
         margin-right: -387px  
 
     &__logo
-        padding-top: 73px
+        padding-top: 75px
 
     &__title
-        padding-top: 18px
+        padding-top: 19px
         font-style: normal
         font-weight: 500
         font-size: 16px
@@ -208,7 +212,8 @@ $base-width: 1600px
     transform: scale(1.2)
 
 .implement
-    min-height: 845px
+    min-height: 848px
+    max-width: 1736px
 
     &__wrapper
         display: flex
@@ -216,13 +221,50 @@ $base-width: 1600px
         align-items: center
         justify-content: space-evenly
         flex-wrap: wrap
-        min-height: 830px
-        max-width: 1319px
+        min-height: 836px
+        max-width: 1252px
         margin: 0 auto
-        border: $del
-    &__column
-        max-width: 360px    
-        border: $del
+        
+    &__context
+        min-height: 200px
+
+    &__title
+        padding-top: 9px
+        padding-bottom: 22px
+        font-size: 24px
+        text-transform: uppercase
+        font-weight: 700
+        letter-spacing: 0.9px
+
+    &__text
+        padding-bottom: 28px
+        font-size: 13px
+        font-weight: 400    
+        line-height: 157%
+        letter-spacing: 0.46px
+
+    &__column-right
+        max-width: 410px
+
+    &__column-left
+        width: 400px
+    &__button
+        padding-right: 41px    
+
+.sign
+    margin: 0 auto
+    max-width: 1600px
+    background-image: url('assets/signup-image.jpg')
+    background-image: no-repeat
+
+    &__wrapper    
+        display: flex
+        align-items: center
+        justify-content: center
+        min-height: 523px
+    
+    &title
+       
         //
         //
         // npm run watch -> go live in vscode
