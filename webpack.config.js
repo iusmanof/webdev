@@ -5,6 +5,8 @@ const {
 } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
+const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 
 module.exports = {
@@ -103,4 +105,11 @@ module.exports = {
             template: './src/index.html',
         }),
     ],
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new HtmlMinimizerPlugin(),
+            new CssMinimizerPlugin(),
+        ],
+    },
 };
