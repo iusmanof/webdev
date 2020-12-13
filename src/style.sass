@@ -25,24 +25,28 @@ body
         display: flex
         flex-direction: row
         align-items: center
-        justify-content: space-around
+        justify-content: space-between
         margin: 0 auto
-        max-width: 680px
+        padding-right: 11px
+        max-width: 580px
 
     &__menu-item--active
         font-weight: normal
+        padding-bottom: 1px
         border-bottom: 1px solid #FFFFFF
 
     &__menu-link
         text-decoration: none
         color: white
-        font-size: 14px
+        font-size: 13px
+        font-weight: 500
 
     &__menu-link:hover
         text-decoration: underline
 
     &__logo
-        margin-right: 10px
+        margin-right: 14px
+        margin-left: 14px 
 
     &__content
         display: flex
@@ -288,7 +292,6 @@ body
 .download
     min-height: 463px
     background: #F5F6F7
-    border: $del
 
     &__wrapper
         display: flex
@@ -320,13 +323,13 @@ body
         // padding-left: 9px
 
     &__button
-        padding: 3px 10px 
+        padding: 3px 10px
         background-color: #00AFCB
         border: none
         color: white
         text-transform: uppercase
         font-weight: bold
-        font-size: 14px 
+        font-size: 14px
         cursor: pointer
 
 .icon
@@ -336,7 +339,6 @@ body
 .footer
     min-height: 185px
     background: #000000
-    
 
     &__wrapper
         margin: 0 auto
@@ -346,12 +348,7 @@ body
         flex-wrap: wrap
         align-items: baseline
         justify-content: space-between
-        // max-width: 900px
-        padding-top: 60px
-
-        
-    &__column
-
+        padding-top: 62px
 
     &__menu
         min-width: 235px
@@ -360,28 +357,25 @@ body
         display: flex
         flex-direction: row
         justify-content: space-between
-        
+
     &__menu-item
         color: white
         font-size: 14px
         font-weight: 500
+        position: relative
 
     &__menu-item::after
-        content:'|'
-        font-size: 8px
-        padding-bottom: 4px
-
-        // border-right: 1px solid white    
-
+        content: "|"
+        font-size: 9px
+        position: absolute
+        right: -23px   
 
     &__logo
-        background: url('assets/logo.svg')  
-        padding-right: 48px
+        background: url('assets/logo.svg')
+        padding-right: 65px
 
     &__copy
         color: white
+        padding-bottom: 3px
         font-size: 14px
         font-weight: 500
-
-
-
