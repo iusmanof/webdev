@@ -2,16 +2,15 @@
 $del: 1px solid red
 
 $base-width: 1600px
-   
+
 body
     font-family: Roboto, sans-serif
-
 
 .container
     margin: 0 auto
     max-width: $base-width
-    
-.header 
+
+.header
     margin: 0 auto
     max-width: 100rem
     background-image: url('./assets/bg-image.png')
@@ -22,7 +21,7 @@ body
     &__menu
         padding-top: 25px
 
-    &__menu-list  
+    &__menu-list
         display: flex
         flex-direction: row
         align-items: center
@@ -30,7 +29,7 @@ body
         margin: 0 auto
         max-width: 680px
 
-    &__menu-item--active            
+    &__menu-item--active
         font-weight: normal
         border-bottom: 1px solid #FFFFFF
 
@@ -50,7 +49,7 @@ body
         flex-direction: column
         align-items: center
         justify-content: space-between
-        padding-top:  8.7rem
+        padding-top: 8.7rem
         color: rgba(255, 255, 255, 0.8)
 
     &__content-title
@@ -62,7 +61,7 @@ body
         font-weight: 700
         letter-spacing: 4px
         word-spacing: 3px
-        
+
     &__content-text
         padding-top: 26px
         padding-left: 3px
@@ -86,18 +85,18 @@ body
         transform: scale(1.2)
 
 .button-get-started
-        display: block
-        background: #00AFDB
-        width: 5.75rem
-        height: 1.12rem
-        padding: 14px 46px
-        text-transform: uppercase
-        color: #FFFFFF
-        font-style: normal
-        font-weight: bold
-        font-size: 14px
-        line-height: 21px
-        transition: all .5s
+    display: block
+    background: #00AFDB
+    width: 5.75rem
+    height: 1.12rem
+    padding: 14px 46px
+    text-transform: uppercase
+    color: #FFFFFF
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 21px
+    transition: all .5s
 
 .button-get-started:hover
     background: #009CCC
@@ -107,14 +106,14 @@ body
     max-width: 1560px
 
     &__wrapper
-        display: flex   
+        display: flex
         flex-direction: row
         align-items: center
         justify-content: space-evenly
         flex-wrap: wrap
         min-height: 52.5rem
-        
-    &__column  
+
+    &__column
         max-width: 405px
         height: 600px
 
@@ -125,7 +124,7 @@ body
         font-size: 1.6rem
         text-transform: uppercase
         line-height: 113%
-        
+
     &__text
         padding-top: 19px
         font-weight: 200
@@ -134,8 +133,8 @@ body
         line-height: 138%
 
     &__button
-        margin-top: 30px    
-        
+        margin-top: 30px
+
     &__column-img
         padding-top: 8px
 
@@ -144,19 +143,19 @@ body
     background: #F5F6F7
 
     &__wrapper
-        display: flex  
+        display: flex
         justify-content: flex-end
         flex-wrap: wrap
         overflow-x: hidden
         padding-top: 87px
-       
+
     &__info
         max-width: 300px
         margin-right: 107px
         text-align: center
 
     &__sliders
-        margin-right: -387px  
+        margin-right: -387px
 
     &__logo
         padding-top: 75px
@@ -184,10 +183,9 @@ body
         width: 100px
         padding-bottom: 22px
         padding-left: 565px
-        
+
     &__slider-items
         display: flex
-
 
     &__slider-slide
         display: flex
@@ -196,11 +194,11 @@ body
         padding-left: 30px
 
 .prev-arrow,
-.next-arrow 
+.next-arrow
     cursor: pointer
 
 .prev-arrow:hover,
-.next-arrow:hover 
+.next-arrow:hover
     transform: scale(1.2)
 
 .implement
@@ -216,7 +214,7 @@ body
         min-height: 836px
         max-width: 1252px
         margin: 0 auto
-        
+
     &__context
         min-height: 200px
 
@@ -231,7 +229,7 @@ body
     &__text
         padding-bottom: 28px
         font-size: 13px
-        font-weight: 400    
+        font-weight: 400
         line-height: 157%
         letter-spacing: 0.46px
 
@@ -241,7 +239,7 @@ body
     &__column-left
         width: 400px
     &__button
-        padding-right: 41px    
+        padding-right: 41px
 
 .sign
     margin: 0 auto
@@ -252,7 +250,7 @@ body
     background-size: cover
     // background-position: center
 
-    &__wrapper    
+    &__wrapper
         display: flex
         align-items: center
         justify-content: space-between
@@ -261,14 +259,14 @@ body
         min-height: 104px
 
     &__title
-       color: white
-       font-size: 24px
-       font-weight: 700
-       letter-spacing: 1px
-       text-transform: uppercase
+        color: white
+        font-size: 24px
+        font-weight: 700
+        letter-spacing: 1px
+        text-transform: uppercase
 
     &__email
-        min-width: 299px    
+        min-width: 299px
         border: none
         padding: 13px 23px
 
@@ -282,28 +280,29 @@ body
         border: none
         background-color: #00AFCB
         cursor: pointer
-        transition: all .3s   
+        transition: all .3s
 
-    &__submit:hover 
-        // background: #009CC2
+    &__submit:hover
+        background: #009CC2
+
 .download
     min-height: 463px
+    background: #F5F6F7
     border: $del
-    
+
     &__wrapper
         display: flex
         flex-direction: column
         align-items: center
         justify-content: space-between
-        min-height: 162px
-        padding-top: 122px
-        background: #F5F6F7
+        min-height: 161px
+        padding-top: 123px
 
     &__title
         text-transform: uppercase
         font-size: 23px
         font-weight: 700
-        letter-spacing: 2px 
+        letter-spacing: 2px
         word-spacing: -3px
 
     &__text
@@ -317,34 +316,72 @@ body
         display: flex
         flex-direction: row
         justify-content: space-between
-        min-width: 400px
-    
+        min-width: 413px
+        // padding-left: 9px
+
     &__button
-        padding: 14px 19px
-        background-color: #00AFCB    
+        padding: 3px 10px 
+        background-color: #00AFCB
         border: none
         color: white
         text-transform: uppercase
         font-weight: bold
-        font-size: 14px
-        position: relative
-        z-index: 1
+        font-size: 14px 
+        cursor: pointer
 
-    &__button::after
-        position: relative
-        // padding: 10px
-        width: 10px
-        height: 10px
-        z-index: 2
-        top: -2px
-        bottom: -2px
-        left: -20px
-        content: ''        
+.icon
+    padding: 11px 19px
+    background: #009CC2
+
+.footer
+    min-height: 185px
+    background: #000000
     
-        //
-        // npm run watch -> go live in vscode
-        //
-        //
-        // !!!!!!!!
-           
+
+    &__wrapper
+        margin: 0 auto
+        max-width: 1280px
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: baseline
+        justify-content: space-between
+        // max-width: 900px
+        padding-top: 60px
+
+        
+    &__column
+
+
+    &__menu
+        min-width: 235px
+
+    &__menu-list
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        
+    &__menu-item
+        color: white
+        font-size: 14px
+        font-weight: 500
+
+    &__menu-item::after
+        content:'|'
+        font-size: 8px
+        padding-bottom: 4px
+
+        // border-right: 1px solid white    
+
+
+    &__logo
+        background: url('assets/logo.svg')  
+        padding-right: 48px
+
+    &__copy
+        color: white
+        font-size: 14px
+        font-weight: 500
+
+
 

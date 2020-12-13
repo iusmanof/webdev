@@ -77,7 +77,18 @@ module.exports = {
                   name: '[name].[ext]'
                 },
                
-            }
+            },
+            {
+                test: /\.svg$/i,
+                use: [
+                  {
+                    loader: 'url-loader',
+                    options: {
+                      encoding: false,
+                    },
+                  },
+                ],
+              }
         ],
     },
     plugins: [
